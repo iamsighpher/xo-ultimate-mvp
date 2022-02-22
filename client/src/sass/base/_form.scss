@@ -1,0 +1,23 @@
+.form {
+    &__label {
+        display: block;
+        width: 100%;
+        color: $offblack;
+		font-size: $font-medium;
+    }
+
+    &__input {  
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: $lightgrey;
+        color: $offblack;
+        padding: $spacing-small;
+        border-radius: $spacing-mini;
+		font-size: $font-medium;
+
+        &::placeholder {
+            color: $darkgrey;
+        }
+    }
+}

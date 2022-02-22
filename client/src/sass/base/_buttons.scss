@@ -1,0 +1,260 @@
+.user-btn {
+    border: none;
+	background: darken($green, 20%);
+	border-radius: $spacing-mini;
+    margin-top: 0.2rem;
+
+	&__inner {
+        display: block;
+		background: $green;
+		color: $white;
+		padding: $spacing-mini $spacing-small;
+		border-radius: $spacing-mini;
+		transform: translateY(-0.2rem);
+		text-transform: uppercase;
+		
+		font-size: $font-small;
+	}
+
+	&__close {
+		margin-left: $spacing-small;
+		color: darken($green, 20%);
+		cursor: pointer;
+	}
+}
+
+.menu-btn {
+	$this: &;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    border-radius: $spacing-small;
+    margin-top: 0.75rem;
+	background: darken($lightgrey, 20%);
+
+    &:disabled {
+        cursor:not-allowed;
+
+        #{$this}__inner {
+			background: lightgrey;
+            transform: translateY(-0rem);
+		}
+        
+        #{$this}__inner:hover {
+            transform: translateY(-0rem);
+		}
+    }
+
+	&:hover {
+		#{$this}__inner {
+			transform: translateY(-0.75rem);
+		}
+	}
+
+    &:active {
+        #{$this}__inner {
+			transform: translateY(-0rem);
+		}
+    }
+
+	&__inner {
+        display: flex;
+        align-items: center;
+		justify-content: space-between;
+        text-decoration: none;
+        background: $lightgrey;
+		color: darken($lightgrey, 20%);
+        padding: $spacing-small 20%;
+		border-radius: $spacing-small;
+        transform: translateY(-0.5rem);
+		transition: transform 250ms;
+        
+		font-size: $font-large;
+	}
+
+	&__icon {
+		height: 3rem;
+		width: 3rem;
+	}
+}
+
+.primary-btn{
+    $this: &;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    background: darken($offblack, 20%);
+	border-radius: $spacing-small;
+    margin-top: 0.5rem;
+
+    &:hover {
+		#{$this}__inner {
+			transform: translateY(-0.75rem);
+		}
+	}
+
+    &:active {
+        #{$this}__inner {
+			transform: translateY(-0rem);
+		}
+    }
+
+    &__inner {
+        display: block;
+        background: $offblack;
+        color: $white;
+        padding: $spacing-mini $spacing-large;
+		border-radius: $spacing-small;
+        transform: translateY(-0.5rem);
+		transition: transform 250ms;
+        
+		font-size: $font-large;
+    }
+
+    &--pink {
+        background: darken($pink, 20%);
+
+        #{$this}__inner  {
+            background: $pink;
+        }
+    }
+
+    &--yellow {
+        background: darken($yellow, 20%);
+
+        #{$this}__inner  {
+            background: $yellow;
+        }
+    }
+
+    &--green {
+        background: darken($green, 20%);
+
+        #{$this}__inner  {
+            background: $green;
+        }
+    }
+
+    &--blue {
+        background: darken($blue, 20%);
+
+        #{$this}__inner  {
+            background: $blue;
+        }
+    }
+
+    &--purple {
+        background: darken($purple, 20%);
+
+        #{$this}__inner  {
+            background: $purple;
+        }
+    }
+
+    &--grey {
+        background: darken($lightgrey, 20%);
+
+        #{$this}__inner  {
+            background: $lightgrey;
+        }
+    }
+}
+
+.secondary-btn {
+    cursor: pointer;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid $darkgrey;
+    color: $darkgrey;
+    padding: $spacing-mini $spacing-small;
+	border-radius: $spacing-mini;
+    
+		font-size: $font-small;
+}
+
+.icon-btn {
+    $this: &;
+	background: darken($offblack, 20%);
+	border-radius: $spacing-small;
+	border: none;
+	display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 0.75rem;
+
+    &:hover {
+		#{$this}__inner {
+			transform: translateY(-0.75rem);
+		}
+	}
+
+    &:active {
+        #{$this}__inner {
+			transform: translateY(-0rem);
+		}
+    }
+
+	&__inner {
+        display: block;
+        background: $offblack;
+		border-radius: $spacing-small;
+		padding: $spacing-medium;
+		transform: translateY(-0.50rem);
+        transition: transform 250ms;
+	}
+
+	&__icon {
+		height: 4rem;
+		width: 4rem;
+        cursor: pointer;
+	}
+
+    &--pink {
+        background: darken($pink, 20%);
+
+        #{$this}__inner  {
+            background: $pink;
+        }
+    }
+
+    &--yellow {
+        background: darken($yellow, 20%);
+
+        #{$this}__inner  {
+            background: $yellow;
+        }
+    }
+
+    &--green {
+        background: darken($green, 20%);
+
+        #{$this}__inner  {
+            background: $green;
+        }
+    }
+
+    &--blue {
+        background: darken($blue, 20%);
+
+        #{$this}__inner  {
+            background: $blue;
+        }
+    }
+
+    &--purple {
+        background: darken($purple, 20%);
+
+        #{$this}__inner  {
+            background: $purple;
+        }
+    }
+
+    &--grey {
+        background: darken($lightgrey, 20%);
+
+        #{$this}__inner  {
+            background: $lightgrey;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+$font-small: 1.6rem;
+$font-medium: 2rem;
+$font-large: 4rem;
+
+// Font Family
+%font {
+    font-family: proxima-soft, sans-serif;
+}
+
+// Font Weights
+%font-regular {
+    @extend %font;
+    font-weight: 400;
+}
+
+%font-semibold {
+    @extend %font;
+    font-weight: 600;
+}
+
+%font-bold {
+    @extend %font;
+    font-weight: 700;
+}
+
+// Global Default Font
+body {
+    @extend %font-bold;
+    font-size: $font-small;
+}
+
+.text {
+    color: $darkgrey;
+
+    &--pink {
+        color: $pink;
+    }
+
+    &--blue {
+        color: $blue;
+    }
+}
+
+.title-text {
+    @extend %font;
+    font-size: $font-large;
+    color: $offblack;
+}

@@ -1,0 +1,38 @@
+.home {
+    position: relative;
+    overflow: hidden;
+
+    &__bg-cross {
+        position: absolute;
+        top: -20vh;
+        right: -20vw;
+        height: 50vh;
+        width: 50vw;
+    }
+
+    &__bg-naught {
+        position: absolute;
+        bottom: -20vh;
+        left: -20vw;
+        height: 50vh;
+        width: 50vw;
+    }
+
+    &__btn {
+        position: absolute;   
+        left: 50%;
+        top: 65%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+    }
+
+    .header__logo {
+        height: 33vh;
+        width:  33vw;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+    }
+}

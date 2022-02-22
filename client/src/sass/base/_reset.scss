@@ -1,0 +1,49 @@
+// global border box
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// global margin and padding reset
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// allow sizing to use rem
+html {
+    font-size: 62.5%;
+  }
+
+// attempt to prevent text overflows
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+dl,
+dt {
+  overflow-wrap: break-word;
+}
+
+// forms and buttons inherit font color and spacing
+input, textarea, select, button {
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+} 
+
+// attempt to prevent elements being larger than their parent
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  width: 100%;
+}
+

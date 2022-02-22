@@ -1,0 +1,13 @@
+.grid {
+    padding: $spacing-mini;
+    border-radius: $spacing-small;
+    background: $offblack;
+
+    display: grid;
+    padding: $spacing-small;
+
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: $spacing-small;
+    column-gap: $spacing-small;
+}
