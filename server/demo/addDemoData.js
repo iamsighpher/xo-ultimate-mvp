@@ -58,7 +58,7 @@ async function addDemoData() {
         await HighScore.create({
             name: "Jenna",
             wins: 534
-        });s
+        });
         await HighScore.sync();
 	} catch (error) {
 		console.error("Unable to connect to the database:", error);
